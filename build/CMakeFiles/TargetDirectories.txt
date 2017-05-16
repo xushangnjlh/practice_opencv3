@@ -1,0 +1,1 @@
+/home/shang/cpp_ws/practice_opencv3/build/CMakeFiles/feature_training.dir
