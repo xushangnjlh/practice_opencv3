@@ -10,7 +10,7 @@ using namespace cv;
 int main(int argc, char *argv[])
 {
     cout << "Reading database..." << endl;
-    DBoW3::Vocabulary vocab("vocabulary.yml.gz");
+    DBoW3::Vocabulary vocab("vocab_larger_my.yml.gz");
     if(vocab.empty())
     {
         cerr << "Cannot load vacabulary!" << endl;

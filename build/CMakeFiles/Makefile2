@@ -91,38 +91,73 @@ clean: CMakeFiles/feature_training.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/loop_closure.dir
 
 # All Build rule for target.
-CMakeFiles/test.dir/all:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+CMakeFiles/loop_closure.dir/all:
+	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/depend
+	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  2
-	@echo "Built target test"
-.PHONY : CMakeFiles/test.dir/all
+	@echo "Built target loop_closure"
+.PHONY : CMakeFiles/loop_closure.dir/all
 
 # Include target in all.
-all: CMakeFiles/test.dir/all
+all: CMakeFiles/loop_closure.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.dir/rule: cmake_check_build_system
+CMakeFiles/loop_closure.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/loop_closure.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 0
-.PHONY : CMakeFiles/test.dir/rule
+.PHONY : CMakeFiles/loop_closure.dir/rule
 
 # Convenience name for target.
-test: CMakeFiles/test.dir/rule
-.PHONY : test
+loop_closure: CMakeFiles/loop_closure.dir/rule
+.PHONY : loop_closure
 
 # clean rule for target.
-CMakeFiles/test.dir/clean:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
-.PHONY : CMakeFiles/test.dir/clean
+CMakeFiles/loop_closure.dir/clean:
+	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/clean
+.PHONY : CMakeFiles/loop_closure.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/loop_closure.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/point_cloud.dir
+
+# All Build rule for target.
+CMakeFiles/point_cloud.dir/all:
+	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/depend
+	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  3
+	@echo "Built target point_cloud"
+.PHONY : CMakeFiles/point_cloud.dir/all
+
+# Include target in all.
+all: CMakeFiles/point_cloud.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/point_cloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/point_cloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 0
+.PHONY : CMakeFiles/point_cloud.dir/rule
+
+# Convenience name for target.
+point_cloud: CMakeFiles/point_cloud.dir/rule
+.PHONY : point_cloud
+
+# clean rule for target.
+CMakeFiles/point_cloud.dir/clean:
+	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/clean
+.PHONY : CMakeFiles/point_cloud.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/point_cloud.dir/clean
 .PHONY : clean
 
 #=============================================================================

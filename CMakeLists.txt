@@ -18,16 +18,23 @@ message(STATUS "    version: ${OpenCV_VERSION}")
 message(STATUS "    libraries: ${OpenCV_LIBS}")
 message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
 
+# Eigen
+include_directories("/usr/include/eigen3")
+
+# Sophus
+find_package(Sophus REQUIRED)
+include_directories(${Sophus_INCLUDE_DIRS})
+
 # dbow3 
 # dbow3 is a simple lib so I assume you installed it in default directory 
 set( DBoW3_INCLUDE_DIRS "/usr/local/include" )
 set( DBoW3_LIBS "/usr/local/lib/libDBoW3.a" )
 
+add_executable(point_cloud src/point_cloud.cpp)
+target_link_libraries(point_cloud ${OpenCV_LIBS} ${Sophus_LIBRARIES})
+
 add_executable( feature_training src/feature_training.cpp )
 target_link_libraries( feature_training ${OpenCV_LIBS} ${DBoW3_LIBS} )
-
-add_executable( test src/test.cpp )
-
 
 add_executable( loop_closure src/loop_closure.cpp )
 target_link_libraries( loop_closure ${OpenCV_LIBS} ${DBoW3_LIBS} )

@@ -17,6 +17,8 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../include"
   "/usr/local/include"
   "/usr/local/include/opencv"
+  "/usr/include/eigen3"
+  "/home/shang/slam_ws/slambook/3rdparty/Sophus"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

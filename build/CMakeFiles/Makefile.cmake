@@ -11,6 +11,7 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/2.8.12.2/CMakeCCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/2.8.12.2/CMakeSystem.cmake"
+  "/home/shang/slam_ws/slambook/3rdparty/Sophus/build/SophusConfig.cmake"
   "/usr/local/share/OpenCV/OpenCVConfig-version.cmake"
   "/usr/local/share/OpenCV/OpenCVConfig.cmake"
   "/usr/local/share/OpenCV/OpenCVModules-release.cmake"
@@ -47,5 +48,6 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/feature_training.dir/DependInfo.cmake"
-  "CMakeFiles/test.dir/DependInfo.cmake"
+  "CMakeFiles/loop_closure.dir/DependInfo.cmake"
+  "CMakeFiles/point_cloud.dir/DependInfo.cmake"
   )

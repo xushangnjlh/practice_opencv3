@@ -187,6 +187,9 @@ OpenCV_LIB_DIR_DBG:PATH=
 //Path where release OpenCV libraries are located
 OpenCV_LIB_DIR_OPT:PATH=
 
+//The directory containing a CMake configuration file for Sophus.
+Sophus_DIR:PATH=/home/shang/slam_ws/slambook/3rdparty/Sophus/build
+
 //Value Computed by CMake
 loop_closure_BINARY_DIR:STATIC=/home/shang/cpp_ws/practice_opencv3/build
 

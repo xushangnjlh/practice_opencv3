@@ -115,17 +115,30 @@ feature_training/fast:
 .PHONY : feature_training/fast
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named loop_closure
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+loop_closure: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 loop_closure
+.PHONY : loop_closure
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+loop_closure/fast:
+	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/build
+.PHONY : loop_closure/fast
+
+#=============================================================================
+# Target rules for targets named point_cloud
+
+# Build rule for target.
+point_cloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 point_cloud
+.PHONY : point_cloud
+
+# fast build rule for target.
+point_cloud/fast:
+	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/build
+.PHONY : point_cloud/fast
 
 src/feature_training.o: src/feature_training.cpp.o
 .PHONY : src/feature_training.o
@@ -151,29 +164,53 @@ src/feature_training.cpp.s:
 	$(MAKE) -f CMakeFiles/feature_training.dir/build.make CMakeFiles/feature_training.dir/src/feature_training.cpp.s
 .PHONY : src/feature_training.cpp.s
 
-src/test.o: src/test.cpp.o
-.PHONY : src/test.o
+src/loop_closure.o: src/loop_closure.cpp.o
+.PHONY : src/loop_closure.o
 
 # target to build an object file
-src/test.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.o
-.PHONY : src/test.cpp.o
+src/loop_closure.cpp.o:
+	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/src/loop_closure.cpp.o
+.PHONY : src/loop_closure.cpp.o
 
-src/test.i: src/test.cpp.i
-.PHONY : src/test.i
+src/loop_closure.i: src/loop_closure.cpp.i
+.PHONY : src/loop_closure.i
 
 # target to preprocess a source file
-src/test.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.i
-.PHONY : src/test.cpp.i
+src/loop_closure.cpp.i:
+	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/src/loop_closure.cpp.i
+.PHONY : src/loop_closure.cpp.i
 
-src/test.s: src/test.cpp.s
-.PHONY : src/test.s
+src/loop_closure.s: src/loop_closure.cpp.s
+.PHONY : src/loop_closure.s
 
 # target to generate assembly for a file
-src/test.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.s
-.PHONY : src/test.cpp.s
+src/loop_closure.cpp.s:
+	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/src/loop_closure.cpp.s
+.PHONY : src/loop_closure.cpp.s
+
+src/point_cloud.o: src/point_cloud.cpp.o
+.PHONY : src/point_cloud.o
+
+# target to build an object file
+src/point_cloud.cpp.o:
+	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/src/point_cloud.cpp.o
+.PHONY : src/point_cloud.cpp.o
+
+src/point_cloud.i: src/point_cloud.cpp.i
+.PHONY : src/point_cloud.i
+
+# target to preprocess a source file
+src/point_cloud.cpp.i:
+	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/src/point_cloud.cpp.i
+.PHONY : src/point_cloud.cpp.i
+
+src/point_cloud.s: src/point_cloud.cpp.s
+.PHONY : src/point_cloud.s
+
+# target to generate assembly for a file
+src/point_cloud.cpp.s:
+	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/src/point_cloud.cpp.s
+.PHONY : src/point_cloud.cpp.s
 
 # Help Target
 help:
@@ -183,14 +220,18 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... feature_training"
+	@echo "... loop_closure"
+	@echo "... point_cloud"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... src/feature_training.o"
 	@echo "... src/feature_training.i"
 	@echo "... src/feature_training.s"
-	@echo "... src/test.o"
-	@echo "... src/test.i"
-	@echo "... src/test.s"
+	@echo "... src/loop_closure.o"
+	@echo "... src/loop_closure.i"
+	@echo "... src/loop_closure.s"
+	@echo "... src/point_cloud.o"
+	@echo "... src/point_cloud.i"
+	@echo "... src/point_cloud.s"
 .PHONY : help
 
 
