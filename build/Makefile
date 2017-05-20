@@ -102,6 +102,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named depth_filter
+
+# Build rule for target.
+depth_filter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 depth_filter
+.PHONY : depth_filter
+
+# fast build rule for target.
+depth_filter/fast:
+	$(MAKE) -f CMakeFiles/depth_filter.dir/build.make CMakeFiles/depth_filter.dir/build
+.PHONY : depth_filter/fast
+
+#=============================================================================
 # Target rules for targets named feature_training
 
 # Build rule for target.
@@ -127,18 +140,29 @@ loop_closure/fast:
 	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/build
 .PHONY : loop_closure/fast
 
-#=============================================================================
-# Target rules for targets named point_cloud
+src/depth_filter.o: src/depth_filter.cpp.o
+.PHONY : src/depth_filter.o
 
-# Build rule for target.
-point_cloud: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 point_cloud
-.PHONY : point_cloud
+# target to build an object file
+src/depth_filter.cpp.o:
+	$(MAKE) -f CMakeFiles/depth_filter.dir/build.make CMakeFiles/depth_filter.dir/src/depth_filter.cpp.o
+.PHONY : src/depth_filter.cpp.o
 
-# fast build rule for target.
-point_cloud/fast:
-	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/build
-.PHONY : point_cloud/fast
+src/depth_filter.i: src/depth_filter.cpp.i
+.PHONY : src/depth_filter.i
+
+# target to preprocess a source file
+src/depth_filter.cpp.i:
+	$(MAKE) -f CMakeFiles/depth_filter.dir/build.make CMakeFiles/depth_filter.dir/src/depth_filter.cpp.i
+.PHONY : src/depth_filter.cpp.i
+
+src/depth_filter.s: src/depth_filter.cpp.s
+.PHONY : src/depth_filter.s
+
+# target to generate assembly for a file
+src/depth_filter.cpp.s:
+	$(MAKE) -f CMakeFiles/depth_filter.dir/build.make CMakeFiles/depth_filter.dir/src/depth_filter.cpp.s
+.PHONY : src/depth_filter.cpp.s
 
 src/feature_training.o: src/feature_training.cpp.o
 .PHONY : src/feature_training.o
@@ -188,50 +212,26 @@ src/loop_closure.cpp.s:
 	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/src/loop_closure.cpp.s
 .PHONY : src/loop_closure.cpp.s
 
-src/point_cloud.o: src/point_cloud.cpp.o
-.PHONY : src/point_cloud.o
-
-# target to build an object file
-src/point_cloud.cpp.o:
-	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/src/point_cloud.cpp.o
-.PHONY : src/point_cloud.cpp.o
-
-src/point_cloud.i: src/point_cloud.cpp.i
-.PHONY : src/point_cloud.i
-
-# target to preprocess a source file
-src/point_cloud.cpp.i:
-	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/src/point_cloud.cpp.i
-.PHONY : src/point_cloud.cpp.i
-
-src/point_cloud.s: src/point_cloud.cpp.s
-.PHONY : src/point_cloud.s
-
-# target to generate assembly for a file
-src/point_cloud.cpp.s:
-	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/src/point_cloud.cpp.s
-.PHONY : src/point_cloud.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... depth_filter"
 	@echo "... edit_cache"
 	@echo "... feature_training"
 	@echo "... loop_closure"
-	@echo "... point_cloud"
 	@echo "... rebuild_cache"
+	@echo "... src/depth_filter.o"
+	@echo "... src/depth_filter.i"
+	@echo "... src/depth_filter.s"
 	@echo "... src/feature_training.o"
 	@echo "... src/feature_training.i"
 	@echo "... src/feature_training.s"
 	@echo "... src/loop_closure.o"
 	@echo "... src/loop_closure.i"
 	@echo "... src/loop_closure.s"
-	@echo "... src/point_cloud.o"
-	@echo "... src/point_cloud.i"
-	@echo "... src/point_cloud.s"
 .PHONY : help
 
 

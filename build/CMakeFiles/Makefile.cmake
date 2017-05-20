@@ -47,7 +47,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/depth_filter.dir/DependInfo.cmake"
   "CMakeFiles/feature_training.dir/DependInfo.cmake"
   "CMakeFiles/loop_closure.dir/DependInfo.cmake"
-  "CMakeFiles/point_cloud.dir/DependInfo.cmake"
   )

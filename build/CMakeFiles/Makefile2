@@ -56,13 +56,48 @@ CMAKE_SOURCE_DIR = /home/shang/cpp_ws/practice_opencv3
 CMAKE_BINARY_DIR = /home/shang/cpp_ws/practice_opencv3/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/depth_filter.dir
+
+# All Build rule for target.
+CMakeFiles/depth_filter.dir/all:
+	$(MAKE) -f CMakeFiles/depth_filter.dir/build.make CMakeFiles/depth_filter.dir/depend
+	$(MAKE) -f CMakeFiles/depth_filter.dir/build.make CMakeFiles/depth_filter.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  1
+	@echo "Built target depth_filter"
+.PHONY : CMakeFiles/depth_filter.dir/all
+
+# Include target in all.
+all: CMakeFiles/depth_filter.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/depth_filter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/depth_filter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 0
+.PHONY : CMakeFiles/depth_filter.dir/rule
+
+# Convenience name for target.
+depth_filter: CMakeFiles/depth_filter.dir/rule
+.PHONY : depth_filter
+
+# clean rule for target.
+CMakeFiles/depth_filter.dir/clean:
+	$(MAKE) -f CMakeFiles/depth_filter.dir/build.make CMakeFiles/depth_filter.dir/clean
+.PHONY : CMakeFiles/depth_filter.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/depth_filter.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/feature_training.dir
 
 # All Build rule for target.
 CMakeFiles/feature_training.dir/all:
 	$(MAKE) -f CMakeFiles/feature_training.dir/build.make CMakeFiles/feature_training.dir/depend
 	$(MAKE) -f CMakeFiles/feature_training.dir/build.make CMakeFiles/feature_training.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  2
 	@echo "Built target feature_training"
 .PHONY : CMakeFiles/feature_training.dir/all
 
@@ -97,7 +132,7 @@ clean: CMakeFiles/feature_training.dir/clean
 CMakeFiles/loop_closure.dir/all:
 	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/depend
 	$(MAKE) -f CMakeFiles/loop_closure.dir/build.make CMakeFiles/loop_closure.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  3
 	@echo "Built target loop_closure"
 .PHONY : CMakeFiles/loop_closure.dir/all
 
@@ -123,41 +158,6 @@ CMakeFiles/loop_closure.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/loop_closure.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/point_cloud.dir
-
-# All Build rule for target.
-CMakeFiles/point_cloud.dir/all:
-	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/depend
-	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles  3
-	@echo "Built target point_cloud"
-.PHONY : CMakeFiles/point_cloud.dir/all
-
-# Include target in all.
-all: CMakeFiles/point_cloud.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/point_cloud.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/point_cloud.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shang/cpp_ws/practice_opencv3/build/CMakeFiles 0
-.PHONY : CMakeFiles/point_cloud.dir/rule
-
-# Convenience name for target.
-point_cloud: CMakeFiles/point_cloud.dir/rule
-.PHONY : point_cloud
-
-# clean rule for target.
-CMakeFiles/point_cloud.dir/clean:
-	$(MAKE) -f CMakeFiles/point_cloud.dir/build.make CMakeFiles/point_cloud.dir/clean
-.PHONY : CMakeFiles/point_cloud.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/point_cloud.dir/clean
 .PHONY : clean
 
 #=============================================================================

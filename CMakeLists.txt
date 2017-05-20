@@ -1,8 +1,8 @@
 cmake_minimum_required( VERSION 2.8 )
 project( loop_closure )
 
-set( CMAKE_BUILD_TYPE "Release" )
-set( CMAKE_CXX_FLAGS "-std=c++11 -O3" )
+set( CMAKE_BUILD_TYPE "Debug" )
+set( CMAKE_CXX_FLAGS "-std=c++11 -march=native -O3 -fopenmp" )
 
 set( EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin )
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
@@ -30,8 +30,8 @@ include_directories(${Sophus_INCLUDE_DIRS})
 set( DBoW3_INCLUDE_DIRS "/usr/local/include" )
 set( DBoW3_LIBS "/usr/local/lib/libDBoW3.a" )
 
-add_executable(point_cloud src/point_cloud.cpp)
-target_link_libraries(point_cloud ${OpenCV_LIBS} ${Sophus_LIBRARIES})
+add_executable(depth_filter src/depth_filter.cpp)
+target_link_libraries(depth_filter ${OpenCV_LIBS} ${Sophus_LIBRARIES})
 
 add_executable( feature_training src/feature_training.cpp )
 target_link_libraries( feature_training ${OpenCV_LIBS} ${DBoW3_LIBS} )
