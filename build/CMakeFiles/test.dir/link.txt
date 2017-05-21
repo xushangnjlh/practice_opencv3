@@ -1,1 +1,0 @@
-/usr/bin/c++   -std=c++11 -O3 -O3 -DNDEBUG    CMakeFiles/test.dir/src/test.cpp.o  -o ../bin/test -rdynamic 

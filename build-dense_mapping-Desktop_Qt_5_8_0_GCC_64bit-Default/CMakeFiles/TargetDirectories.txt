@@ -1,1 +1,0 @@
-/home/shang/cpp_ws/practice_opencv3/build-dense_mapping-Desktop_Qt_5_8_0_GCC_64bit-Default/CMakeFiles/dense_mapping.dir

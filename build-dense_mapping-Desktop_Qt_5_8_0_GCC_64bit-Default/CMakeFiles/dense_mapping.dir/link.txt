@@ -1,1 +1,0 @@
-/usr/bin/g++   -std=c++11 -march=native -O3 -fopenmp -O3 -DNDEBUG    CMakeFiles/dense_mapping.dir/main.cpp.o  -o dense_mapping -rdynamic 
